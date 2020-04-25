@@ -1,0 +1,72 @@
+html{
+  overflow: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+.container{
+  position: relative;
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+}
+.clearfix{
+  clear: both;
+}
+#mainHeader{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #34495e;
+  z-index: 1010;
+}
+#navInner{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#navInner > ul {
+  list-style: none;
+}
+#navInner > ul > li{
+  display: inline-block;
+}
+#navInner > ul > li > a{
+  display: block;
+  color: #ecf0f1;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.screen{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #1abc9c;
+  padding: 100px;
+}
+.screen > .screenInner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  background:rgba(255,255,255,0.7);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+.screen > .screenInner > .screenTxt{
+  width: 100%;
+  text-align: center;
+}
+.screen > .screenInner > .screenTxt > h1{
+  font-size: 100px;
+}
